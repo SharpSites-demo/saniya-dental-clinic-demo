@@ -1,0 +1,12 @@
+name: Publish reviewed Saniya Dental Clinic redesign
+on:
+  push:
+    branches: [gh-pages]
+    paths: [.github/workflows/publish-reviewed-20260915.yml]
+permissions:
+  contents: write
+jobs:
+  publish:
+    uses: SharpSites-demo/sparta-gym-spa-ritik-demo/.github/workflows/publish-reviewed-html.yml@41cd0e039ca25ad2234ffc0978649d9e00875f09
+    with:
+      expected_sha256: b952a726b9286077a8f2f9ed77e90b127c4093cdbd69fa5a8132b05499b609ce
